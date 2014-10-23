@@ -13,6 +13,15 @@
         <Button x:ConnectionId='2' x:Name="EventsButton" Content="EVENTS" HorizontalAlignment="Left" Margin="105,0,0,0" VerticalAlignment="Top" MinHeight="23" MinWidth="50" Height="60" BorderThickness="0" Width="95" Padding="0"                                                   />
         <Button x:ConnectionId='3' x:Name="CalendarButton" Content="CALENDAR" HorizontalAlignment="Left" Margin="200,0,0,0" VerticalAlignment="Top" BorderThickness="0" MinHeight="23" MinWidth="50" Width="95" Height="60" Padding="0"                                                       />
         <Button x:ConnectionId='4' x:Name="SubjectsButton" Content="SUBJECTS" HorizontalAlignment="Left" Margin="295,0,0,0" VerticalAlignment="Top" MinHeight="23" MinWidth="50" Padding="0" Width="95" BorderThickness="0" Height="60" Foreground="Red"                                                       />
+        <GridView x:ConnectionId='5' ScrollViewer.VerticalScrollMode = "Auto" ScrollViewer.HorizontalScrollMode = "Auto"  ScrollViewer.VerticalScrollBarVisibility = "Disabled" ScrollViewer.HorizontalScrollBarVisibility = "Disabled" x:Name="SubjectsGridView" HorizontalAlignment="Left" Height="463" Margin="16,55,0,0" VerticalAlignment="Top" Width="370"                                                     BorderBrush="White">
+            <GridView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapGrid MaximumRowsOrColumns="1" Orientation="Horizontal" ItemWidth="370" />
+                </ItemsPanelTemplate>
+            </GridView.ItemsPanel>
+        </GridView>
+        <Button x:ConnectionId='6' x:Name="AddSubjectButton" Content="Add Subject" HorizontalAlignment="Left" Margin="13,515,0,0" VerticalAlignment="Top"                             />
+        <Button x:ConnectionId='7' x:Name="EditSubjectButton" Content="Edit Subject" HorizontalAlignment="Left" Margin="271,515,0,0" VerticalAlignment="Top"                              />
 
     </Grid>
 </local:NavBar>

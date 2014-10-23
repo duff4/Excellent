@@ -56,3 +56,13 @@ C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\ob
 C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\x86\Debug\Pages\EventsAddPage.g.i.cs
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\x86\Debug\Pages\EventsAddPage.g.cs
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Pages\EventsAddPage.xbf
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\x86\Debug\Pages\EventsAddPage.xaml
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\x86\Debug\Pages\EventsAddPage.xbf
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\x86\Debug\Pages\SubjectsAddPage.g.i.cs
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\x86\Debug\Pages\SubjectsAddPage.g.cs
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\x86\Debug\Pages\SubjectsAddPage.xaml
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\x86\Debug\Pages\SubjectsAddPage.xbf
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Pages\SubjectsAddPage.xbf

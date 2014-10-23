@@ -15,7 +15,7 @@ namespace App2.Entities
         [PrimaryKey, AutoIncrement, Unique]
         public Guid Id { get; set; }
         public ScheduleActionPriority Priority { get; set; }
-        public DateTime StartTime { get; set; }
-        public DateTime DateTime { get; set; }
+        public DateTimeOffset StartDate { get; set; }
+        public DateTimeOffset EndDate { get; set; }
     }
 }

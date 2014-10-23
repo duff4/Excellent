@@ -42,6 +42,10 @@ namespace App2
             this.Suspending += this.OnSuspending;
             GenericRepo<ActivityEntity>.CreateTable();
             GenericRepo<TaskEntity>.CreateTable();
+            GenericRepo<SubjectEntity>.CreateTable();
+            GenericRepo<LecturerEntity>.CreateTable();
+            GenericRepo<PlaceEntity>.CreateTable();
+            GenericRepo<EventEntity>.CreateTable();
         }
 
         /// <summary>

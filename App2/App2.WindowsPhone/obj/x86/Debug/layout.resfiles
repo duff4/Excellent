@@ -15,8 +15,10 @@ Assets\WideLogo.scale-240.png
 App.xbf
 App2.WindowsPhone.xr.xml
 Pages\CalendarViewPage.xbf
+Pages\EventsAddPage.xbf
 Pages\EventsViewPage.xbf
 Pages\IndexPage.xbf
+Pages\SubjectsAddPage.xbf
 Pages\SubjectsViewPage.xbf
 Pages\TasksAddPage.xbf
 Pages\TasksViewPage.xbf

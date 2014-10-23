@@ -7,7 +7,7 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>f463794c-b7ff-434b-aa1b-89cf4931eec1</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Windows\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\x86\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>D5AE1996EEBA6F971E4B93878027C0A9D176BFDDD2288B6572C478124D68964B</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>f463794c-b7ff-434b-aa1b-89cf4931eec1_1.0.0.0_x86__0dyxa9kg0kb5r</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>f463794c-b7ff-434b-aa1b-89cf4931eec1_0dyxa9kg0kb5r!App</RegisteredUserModeAppID>
@@ -17,108 +17,116 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-10-22T07:14:11.582</Modified>
+      <Modified>2014-10-23T19:37:52.814</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\App2.Windows.exe">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\App2.Windows.exe">
       <PackagePath>App2.Windows.exe</PackagePath>
-      <Modified>2014-10-22T07:16:49.946</Modified>
+      <Modified>2014-10-23T19:44:49.744</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\SQLite.WinRT81\3.8.7\Redist\Debug\x86\sqlite3.dll">
       <PackagePath>sqlite3.dll</PackagePath>
       <Modified>2014-10-22T06:15:32.816</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Windows\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2014-03-14T07:55:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Windows\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2014-03-14T07:55:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Windows\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2014-03-14T07:55:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Windows\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2014-03-14T07:55:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Shared\Images\CalendarLogo.png">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Shared\Images\CalendarLogo.png">
       <PackagePath>Images\CalendarLogo.png</PackagePath>
       <Modified>2014-10-15T18:00:11.413</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Shared\Images\EventsLogo.png">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Shared\Images\EventsLogo.png">
       <PackagePath>Images\EventsLogo.png</PackagePath>
       <Modified>2014-10-15T18:00:11.417</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Shared\Images\logo.png">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Shared\Images\logo.png">
       <PackagePath>Images\logo.png</PackagePath>
       <Modified>2014-10-15T17:21:50.865</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Shared\Images\SubjectsLogo.png">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Shared\Images\SubjectsLogo.png">
       <PackagePath>Images\SubjectsLogo.png</PackagePath>
       <Modified>2014-10-15T18:00:11.420</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Shared\Images\TasksLogo.png">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Shared\Images\TasksLogo.png">
       <PackagePath>Images\TasksLogo.png</PackagePath>
       <Modified>2014-10-15T18:00:11.423</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Shared\Common\ReadMe.txt">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Shared\Common\ReadMe.txt">
       <PackagePath>Common\ReadMe.txt</PackagePath>
       <Modified>2014-10-09T06:06:39.268</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Shared\DataModel\SampleData.json">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Shared\DataModel\SampleData.json">
       <PackagePath>DataModel\SampleData.json</PackagePath>
       <Modified>2014-10-09T06:06:39.403</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Shared\Images\main-1.jpg">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Shared\Images\main-1.jpg">
       <PackagePath>Images\main-1.jpg</PackagePath>
       <Modified>2014-10-15T17:22:23.771</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2014-10-22T07:14:10.814</Modified>
+      <Modified>2014-10-23T15:46:15.753</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Pages\CalendarViewPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Pages\CalendarViewPage.xbf">
       <PackagePath>Pages\CalendarViewPage.xbf</PackagePath>
-      <Modified>2014-10-22T07:14:10.814</Modified>
+      <Modified>2014-10-23T15:46:15.753</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Pages\EventsViewPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Pages\EventsAddPage.xbf">
+      <PackagePath>Pages\EventsAddPage.xbf</PackagePath>
+      <Modified>2014-10-23T19:37:09.017</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Pages\EventsViewPage.xbf">
       <PackagePath>Pages\EventsViewPage.xbf</PackagePath>
-      <Modified>2014-10-22T07:14:10.814</Modified>
+      <Modified>2014-10-23T18:51:32.865</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Pages\IndexPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Pages\IndexPage.xbf">
       <PackagePath>Pages\IndexPage.xbf</PackagePath>
-      <Modified>2014-10-22T07:14:10.814</Modified>
+      <Modified>2014-10-23T15:46:15.753</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Pages\SubjectsViewPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Pages\SubjectsAddPage.xbf">
+      <PackagePath>Pages\SubjectsAddPage.xbf</PackagePath>
+      <Modified>2014-10-23T19:39:48.635</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Pages\SubjectsViewPage.xbf">
       <PackagePath>Pages\SubjectsViewPage.xbf</PackagePath>
-      <Modified>2014-10-22T07:14:10.814</Modified>
+      <Modified>2014-10-23T19:37:09.017</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Pages\TasksAddPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Pages\TasksAddPage.xbf">
       <PackagePath>Pages\TasksAddPage.xbf</PackagePath>
-      <Modified>2014-10-22T07:14:10.814</Modified>
+      <Modified>2014-10-23T19:37:09.017</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Pages\TasksViewPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Pages\TasksViewPage.xbf">
       <PackagePath>Pages\TasksViewPage.xbf</PackagePath>
-      <Modified>2014-10-22T07:14:10.815</Modified>
+      <Modified>2014-10-23T19:37:09.017</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\App2.Windows.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\App2.Windows.xr.xml">
       <PackagePath>App2.Windows.xr.xml</PackagePath>
-      <Modified>2014-10-22T07:08:07.522</Modified>
+      <Modified>2014-10-23T19:37:08.965</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-10-22T07:14:11.474</Modified>
+      <Modified>2014-10-23T19:37:52.564</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

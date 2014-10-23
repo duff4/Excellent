@@ -13,6 +13,5 @@
         <Button x:Name="EventsButton" Content="EVENTS" HorizontalAlignment="Left" Margin="105,0,0,0" VerticalAlignment="Top" MinHeight="23" MinWidth="50" Height="60" BorderThickness="0" Width="95" Padding="0" Click="EventsButtonClick" Tapped="EventsButtonTap"/>
         <Button x:Name="CalendarButton" Content="CALENDAR" HorizontalAlignment="Left" Margin="200,0,0,0" VerticalAlignment="Top" BorderThickness="0" MinHeight="23" MinWidth="50" Width="95" Height="60" Padding="0" Foreground="Red" Click="CalendarButtonClick" Tapped="CalendarButtonTap"/>
         <Button x:Name="SubjectsButton" Content="SUBJECTS" HorizontalAlignment="Left" Margin="295,0,0,0" VerticalAlignment="Top" MinHeight="23" MinWidth="50" Padding="0" Width="95" BorderThickness="0" Height="60" Click="SubjectsButtonClick" Tapped="SubjectsButtonTap"/>
-
     </Grid>
 </local:NavBar>

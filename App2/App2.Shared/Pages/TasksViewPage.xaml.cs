@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Navigation;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 using App1.Entities;
 using App1.Pages;
+using App2.Entities;
 
 namespace App1
 {
@@ -36,7 +37,10 @@ namespace App1
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            TasksGridView.ItemsSource = GenericRepo<ActivityEntity>.GetSome().Select(x => x.Description);
+            var items = GenericRepo<TaskEntity>.GetSome();
+
+            TasksGridView.ItemsSource = items.Select(x => string.Format("{0,-15}{1,-15}{2,-10}", /*items.IndexOf(x).ToString(), */x.Name, x.Description, x.DeadLine.Date.ToString("d")));
+
             DeleteTaskButton.IsEnabled = false;
             EditTaskButton.IsEnabled = false;
             AddTask.IsEnabled = true;
@@ -44,44 +48,7 @@ namespace App1
 
         private void AddTaskButtonTap(object sender, TappedRoutedEventArgs e)
         {
-            //var someActivityEntity = new ActivityEntity { Description = "this is a description", Name = "this is a name" };
-
-            //GenericRepo<ActivityEntity>.Insert(someActivityEntity);
-
-            //var checkActivityEntity = GenericRepo<ActivityEntity>.Get(someActivityEntity.Id);
-            //TextBox1.Text = checkActivityEntity.Description;
-
-            //TasksGridView.ItemsSource = GenericRepo<ActivityEntity>.GetSome();
-        }
-
-        private void AddTaskButtonClick(object sender, RoutedEventArgs e)
-        {
-            var someActivityEntity = new ActivityEntity { Description = "this is a description", Name = "this is a name" };
-
-            GenericRepo<ActivityEntity>.Insert(someActivityEntity);
-
-            var checkActivityEntity = GenericRepo<ActivityEntity>.Get(someActivityEntity.Id);
-            TextBox1.Text = checkActivityEntity.Description;
-
-            TasksGridView.ItemsSource = GenericRepo<ActivityEntity>.GetSome().Select(x => x.Id);
-
-            DeleteTaskButton.IsEnabled = false;
-            EditTaskButton.IsEnabled = false;
-            //var rootFrame = Window.Current.Content as Frame;
-
-            //rootFrame.Navigate(typeof(TasksAddPage), e);
-        }
-
-        private void DeleteTaskButtonClick(object sender, RoutedEventArgs e)
-        {
-            var selectedItem = TasksGridView.SelectedItem;
-
-            GenericRepo<ActivityEntity>.Delete(selectedItem);
-
-            TasksGridView.ItemsSource = GenericRepo<ActivityEntity>.GetSome().Select(x => x.Id);
-
-            DeleteTaskButton.IsEnabled = false;
-            EditTaskButton.IsEnabled = false;
+            RootFrame.Navigate(typeof (TasksAddPage), e);
         }
 
         private void TasksGridViewSelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -90,9 +57,22 @@ namespace App1
             EditTaskButton.IsEnabled = true;
         }
 
-        private void RefreshGridView()
+        private void DeleteTaskButtonTap(object sender, TappedRoutedEventArgs e)
         {
-            
+            //var selectedItem = TasksGridView.SelectedItem;
+
+            //GenericRepo<TaskEntity>.Delete(selectedItem);
+            var items = GenericRepo<TaskEntity>.GetSome();
+
+            TasksGridView.ItemsSource = items.Select(x => string.Format("{0,-4}{1,-10}{2,30}", items.IndexOf(x).ToString(), x.Name, x.Description));
+
+            DeleteTaskButton.IsEnabled = false;
+            EditTaskButton.IsEnabled = false;
+        }
+
+        private void EditTaskButtonTap(object sender, TappedRoutedEventArgs e)
+        {
+            RootFrame.Navigate(typeof (TasksAddPage), TasksGridView.SelectedItem);
         }
     }
 }

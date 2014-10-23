@@ -11,7 +11,7 @@ namespace App1.Pages
 {
     public class NavBar : Page, INavBar
     {
-        private static Frame RootFrame
+        protected static Frame RootFrame
         {
             get { return Window.Current.Content as Frame; }
         }

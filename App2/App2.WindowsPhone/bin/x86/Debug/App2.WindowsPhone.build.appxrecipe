@@ -7,94 +7,100 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>23d9668a-8bae-4a2b-b387-a7cb547557fb</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.WindowsPhone\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\obj\x86\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\App2.WindowsPhone.exe">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\App2.WindowsPhone.exe">
       <PackagePath>App2.WindowsPhone.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\SQLite.WP81\3.8.6\Redist\Debug\x86\sqlite3.dll">
       <PackagePath>sqlite3.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.WindowsPhone\Assets\Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.WindowsPhone\Assets\SmallLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\Assets\SmallLogo.scale-240.png">
       <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.WindowsPhone\Assets\SplashScreen.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\Assets\SplashScreen.scale-240.png">
       <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.WindowsPhone\Assets\Square71x71Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\Assets\Square71x71Logo.scale-240.png">
       <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.WindowsPhone\Assets\StoreLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\Assets\StoreLogo.scale-240.png">
       <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.WindowsPhone\Assets\WideLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\Assets\WideLogo.scale-240.png">
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Shared\Images\CalendarLogo.png">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Shared\Images\CalendarLogo.png">
       <PackagePath>Images\CalendarLogo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Shared\Images\EventsLogo.png">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Shared\Images\EventsLogo.png">
       <PackagePath>Images\EventsLogo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Shared\Images\logo.png">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Shared\Images\logo.png">
       <PackagePath>Images\logo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Shared\Images\SubjectsLogo.png">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Shared\Images\SubjectsLogo.png">
       <PackagePath>Images\SubjectsLogo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Shared\Images\TasksLogo.png">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Shared\Images\TasksLogo.png">
       <PackagePath>Images\TasksLogo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Shared\Common\ReadMe.txt">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Shared\Common\ReadMe.txt">
       <PackagePath>Common\ReadMe.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Shared\DataModel\SampleData.json">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Shared\DataModel\SampleData.json">
       <PackagePath>DataModel\SampleData.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.Shared\Images\main-1.jpg">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Shared\Images\main-1.jpg">
       <PackagePath>Images\main-1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\Pages\CalendarViewPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\Pages\CalendarViewPage.xbf">
       <PackagePath>Pages\CalendarViewPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\Pages\EventsViewPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\Pages\EventsAddPage.xbf">
+      <PackagePath>Pages\EventsAddPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\Pages\EventsViewPage.xbf">
       <PackagePath>Pages\EventsViewPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\Pages\IndexPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\Pages\IndexPage.xbf">
       <PackagePath>Pages\IndexPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\Pages\SubjectsViewPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\Pages\SubjectsAddPage.xbf">
+      <PackagePath>Pages\SubjectsAddPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\Pages\SubjectsViewPage.xbf">
       <PackagePath>Pages\SubjectsViewPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\Pages\TasksAddPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\Pages\TasksAddPage.xbf">
       <PackagePath>Pages\TasksAddPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\Pages\TasksViewPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\Pages\TasksViewPage.xbf">
       <PackagePath>Pages\TasksViewPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\App2.WindowsPhone.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\App2.WindowsPhone.xr.xml">
       <PackagePath>App2.WindowsPhone.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\Documents\Visual Studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

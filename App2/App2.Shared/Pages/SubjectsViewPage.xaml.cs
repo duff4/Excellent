@@ -14,6 +14,9 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
+using App1.Entities;
+using App2.Entities;
+using App2.Pages;
 
 namespace App1.Pages
 {
@@ -34,6 +37,27 @@ namespace App1.Pages
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            var items = GenericRepo<SubjectEntity>.GetSome();
+
+            SubjectsGridView.ItemsSource = items.Select(x => string.Format("{0,-15}{1,-15}{2,-10}", /*items.IndexOf(x).ToString(), */x.Name, x.Description, x.EvaluationType));
+
+            EditSubjectButton.IsEnabled = false;
+            AddSubjectButton.IsEnabled = true;
+        }
+
+        private void SubjectsGridViewSelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            EditSubjectButton.IsEnabled = true;
+        }
+
+        private void AddSubjectButtonTap(object sender, TappedRoutedEventArgs e)
+        {
+            RootFrame.Navigate(typeof (SubjectsAddPage), e);
+        }
+
+        private void EditSubjectButtonTap(object sender, TappedRoutedEventArgs e)
+        {
+            RootFrame.Navigate(typeof(SubjectsAddPage), SubjectsGridView.SelectedItem);
         }
     }
 }

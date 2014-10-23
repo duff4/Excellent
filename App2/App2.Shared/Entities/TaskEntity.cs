@@ -15,8 +15,10 @@ namespace App2.Entities
         [PrimaryKey, AutoIncrement, Unique]
         public Guid Id { get; set; }
         public ScheduleActionPriority Priority { get; set; }
-        public DateTime DeadLine { get; set; }
+        public DateTimeOffset DeadLine { get; set; }
         public bool IsCompleted { get; set; }
         public TaskEntityDifficulty Difficulty { get; set; }
+        public string Lecturer { get; set; }
+        public string Subject { get; set; }
     }
 }

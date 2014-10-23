@@ -13,6 +13,15 @@
         <Button x:Name="EventsButton" Content="EVENTS" HorizontalAlignment="Left" Margin="105,0,0,0" VerticalAlignment="Top" MinHeight="23" MinWidth="50" Height="60" BorderThickness="0" Width="95" Padding="0" Click="EventsButtonClick" Tapped="EventsButtonTap"/>
         <Button x:Name="CalendarButton" Content="CALENDAR" HorizontalAlignment="Left" Margin="200,0,0,0" VerticalAlignment="Top" BorderThickness="0" MinHeight="23" MinWidth="50" Width="95" Height="60" Padding="0" Click="CalendarButtonClick" Tapped="CalendarButtonTap"/>
         <Button x:Name="SubjectsButton" Content="SUBJECTS" HorizontalAlignment="Left" Margin="295,0,0,0" VerticalAlignment="Top" MinHeight="23" MinWidth="50" Padding="0" Width="95" BorderThickness="0" Height="60" Foreground="Red" Click="SubjectsButtonClick" Tapped="SubjectsButtonTap"/>
+        <GridView ScrollViewer.VerticalScrollMode = "Auto" ScrollViewer.HorizontalScrollMode = "Auto"  ScrollViewer.VerticalScrollBarVisibility = "Disabled" ScrollViewer.HorizontalScrollBarVisibility = "Disabled" x:Name="SubjectsGridView" HorizontalAlignment="Left" Height="463" Margin="16,55,0,0" VerticalAlignment="Top" Width="370" SelectionChanged="SubjectsGridViewSelectionChanged" BorderBrush="White">
+            <GridView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapGrid MaximumRowsOrColumns="1" Orientation="Horizontal" ItemWidth="370" />
+                </ItemsPanelTemplate>
+            </GridView.ItemsPanel>
+        </GridView>
+        <Button x:Name="AddSubjectButton" Content="Add Subject" HorizontalAlignment="Left" Margin="13,515,0,0" VerticalAlignment="Top" Tapped="AddSubjectButtonTap"/>
+        <Button x:Name="EditSubjectButton" Content="Edit Subject" HorizontalAlignment="Left" Margin="271,515,0,0" VerticalAlignment="Top" Tapped="EditSubjectButtonTap"/>
 
     </Grid>
 </local:NavBar>
