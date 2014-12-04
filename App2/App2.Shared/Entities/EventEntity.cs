@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using App1.Entities;
 using SQLite;
 
 namespace App2.Entities
@@ -17,5 +16,6 @@ namespace App2.Entities
         public ScheduleActionPriority Priority { get; set; }
         public DateTimeOffset StartDate { get; set; }
         public DateTimeOffset EndDate { get; set; }
+        public string Place { get; set; }
     }
 }

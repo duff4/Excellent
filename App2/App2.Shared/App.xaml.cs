@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
@@ -17,9 +18,9 @@ using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=234227
-using App1.Entities;
-using App1.Pages;
 using App2.Entities;
+using App2.Pages;
+using SQLite;
 
 namespace App2
 {
@@ -46,6 +47,8 @@ namespace App2
             GenericRepo<LecturerEntity>.CreateTable();
             GenericRepo<PlaceEntity>.CreateTable();
             GenericRepo<EventEntity>.CreateTable();
+            GenericRepo<FirstTimeLaunch>.CreateTable();
+            GenericRepo<Language>.CreateTable();
         }
 
         /// <summary>
@@ -104,9 +107,26 @@ namespace App2
                 // When the navigation stack isn't restored navigate to the first page,
                 // configuring the new page by passing required information as a navigation
                 // parameter
-                if (!rootFrame.Navigate(typeof(IndexPage), e.Arguments))
+
+                //Uncomment to laucnh App like first time
+                GenericRepo<FirstTimeLaunch>.DeleteAll();
+
+                var firstTimeLauchItem = GenericRepo<FirstTimeLaunch>.GetAll();
+
+                if (firstTimeLauchItem.Count == 0)
                 {
-                    throw new Exception("Failed to create initial page");
+                    GenericRepo<FirstTimeLaunch>.Insert(new FirstTimeLaunch {IsFirstTimeLaunch = false});
+                    if (!rootFrame.Navigate(typeof(LanguageChoice), e.Arguments))
+                    {
+                        throw new Exception("Failed to create initial page");
+                    }
+                }
+                else
+                {
+                    if (!rootFrame.Navigate(typeof(TasksViewPage), e.Arguments))
+                    {
+                        throw new Exception("Failed to create initial page");
+                    }
                 }
             }
 

@@ -65,8 +65,11 @@
     <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Pages\CalendarViewPage.xbf">
-      <PackagePath>Pages\CalendarViewPage.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Pages\LecturersAddPage.xbf">
+      <PackagePath>Pages\LecturersAddPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Pages\LecturersViewPage.xbf">
+      <PackagePath>Pages\LecturersViewPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Pages\EventsAddPage.xbf">
       <PackagePath>Pages\EventsAddPage.xbf</PackagePath>
@@ -74,8 +77,8 @@
     <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Pages\EventsViewPage.xbf">
       <PackagePath>Pages\EventsViewPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Pages\IndexPage.xbf">
-      <PackagePath>Pages\IndexPage.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Pages\LanguageChoice.xbf">
+      <PackagePath>Pages\LanguageChoice.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Pages\SubjectsAddPage.xbf">
       <PackagePath>Pages\SubjectsAddPage.xbf</PackagePath>

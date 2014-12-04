@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.Resources;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -14,9 +15,8 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
-using App1.Entities;
-using App1.Pages;
 using App2.Entities;
+using App2.Extensions;
 
 namespace App2.Pages
 {
@@ -25,45 +25,61 @@ namespace App2.Pages
     /// </summary>
     public sealed partial class SubjectsAddPage : NavBar
     {
+        private const string NameTextBoxResourceName = "NameTextBox";
+        private const string DescriptionTextBoxResourceName = "DescriptionTextBox";
+        private const string EvaluationTypeComboboxPlaceholderResourceName = "EvaluationTypeString";
+        private const string AddButtonTextResourceName = "AddButtonText";
+        private const string CancelButtonTextResourceName = "CancelButtonText";
+
+        private readonly string _nameTextBoxDefaultString = GlobalResourceLoader.GetString(NameTextBoxResourceName);
+        private readonly string _descriptionTextBoxDefaultString = GlobalResourceLoader.GetString(DescriptionTextBoxResourceName);
+
+        private bool _isEditMode = false;
+        private TaskEntity editingTaskEntity;
+
         public SubjectsAddPage()
         {
             this.InitializeComponent();
         }
-        private const string NameTextBoxDefaultString = "Name";
-        private const string DescriptionTextBoxDefaultString = "Description";
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            NameTextBox.Text = NameTextBoxDefaultString;
-            DescriptionTextBox.Text = DescriptionTextBoxDefaultString;
+            SetButtonNames(TasksButton, EventsButton, LecturersButton, SubjectsButton);
 
-            EvaluationTypeComboBox.Items.Insert(0, EvaluationType.None.ToString());
-            EvaluationTypeComboBox.Items.Insert(1, EvaluationType.Test.ToString());
-            EvaluationTypeComboBox.Items.Insert(2, EvaluationType.Exam.ToString());
+            AddButton.Content = GlobalResourceLoader.GetString(AddButtonTextResourceName);
+            CancelButton.Content = GlobalResourceLoader.GetString(CancelButtonTextResourceName);
+            EvaluationTypeComboBox.PlaceholderText = GlobalResourceLoader.GetString(EvaluationTypeComboboxPlaceholderResourceName);
+
+            NameTextBox.Text = _nameTextBoxDefaultString;
+            DescriptionTextBox.Text = _descriptionTextBoxDefaultString;
+
+            EvaluationTypeComboBox.Items.Insert(0, EvaluationType.None.ToString().Localize());
+            EvaluationTypeComboBox.Items.Insert(1, EvaluationType.Test.ToString().Localize());
+            EvaluationTypeComboBox.Items.Insert(2, EvaluationType.Exam.ToString().Localize());
         }
 
         private void NameTextBoxGotFocus(object sender, RoutedEventArgs e)
         {
-            if (NameTextBox.Text.Trim() == NameTextBoxDefaultString)
+            if (NameTextBox.Text.Trim() == _nameTextBoxDefaultString)
                 NameTextBox.Text = string.Empty;
         }
 
         private void NameTextBoxLostFocus(object sender, RoutedEventArgs e)
         {
             if (string.IsNullOrWhiteSpace(NameTextBox.Text))
-                NameTextBox.Text = NameTextBoxDefaultString;
+                NameTextBox.Text = _nameTextBoxDefaultString;
         }
 
         private void DescriptionTextBoxGotFocus(object sender, RoutedEventArgs e)
         {
-            if (DescriptionTextBox.Text.Trim() == DescriptionTextBoxDefaultString)
+            if (DescriptionTextBox.Text.Trim() == _descriptionTextBoxDefaultString)
                 DescriptionTextBox.Text = string.Empty;
         }
 
         private void DescriptionTextBoxLostFocus(object sender, RoutedEventArgs e)
         {
             if (string.IsNullOrWhiteSpace(DescriptionTextBox.Text))
-                DescriptionTextBox.Text = DescriptionTextBoxDefaultString;
+                DescriptionTextBox.Text = _descriptionTextBoxDefaultString;
         }
 
         private void AddButtonTap(object sender, TappedRoutedEventArgs e)

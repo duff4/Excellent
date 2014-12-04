@@ -1,4 +1,4 @@
-﻿namespace App1.Entities
+﻿namespace App2.Entities
 {
     enum LecturerDifficulty
     {

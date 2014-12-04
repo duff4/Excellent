@@ -18,7 +18,9 @@
     <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
   </Prerequisites>
   <Resources>
+    <Resource Language="UK-UA" />
     <Resource Language="EN-US" />
+    <Resource Language="RU-RU" />
   </Resources>
   <Applications>
     <Application Id="App" Executable="App2.Windows.exe" EntryPoint="App2.Windows.App">

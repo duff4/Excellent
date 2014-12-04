@@ -17,9 +17,8 @@ using Windows.UI.Xaml.Navigation;
 using Windows.UI.Popups;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
-using App1.Entities;
-using App1.Pages;
 using App2.Entities;
+using App2.Extensions;
 
 namespace App2.Pages
 {
@@ -28,6 +27,24 @@ namespace App2.Pages
     /// </summary>
     public sealed partial class EventsAddPage : NavBar
     {
+        private const string NameTextBoxResourceName = "NameTextBox";
+        private const string DescriptionTextBoxResourceName = "DescriptionTextBox";
+        private const string StartTextBoxResourceName = "StartString";
+        private const string EndTextBoxResourceName = "EndString";
+        private const string PlaceComboboxPlaceholderResourceName = "PlaceString";
+        private const string PriorityComboboxPlaceholderResourceName = "PriorityString";
+        private const string AddButtonTextResourceName = "AddButtonText";
+        private const string CancelButtonTextResourceName = "CancelButtonText";
+        private const string EditButtonResourceName = "EditButtonText";
+
+        private readonly string _nameTextBoxDefaultString = GlobalResourceLoader.GetString(NameTextBoxResourceName);
+        private readonly string _descriptionTextBoxDefaultString = GlobalResourceLoader.GetString(DescriptionTextBoxResourceName);
+        private readonly string _placeComboBoxDefaultPlaceholder = GlobalResourceLoader.GetString(PlaceComboboxPlaceholderResourceName);
+        private readonly string _priorityComboBoxDefaultPlaceholder = GlobalResourceLoader.GetString(PriorityComboboxPlaceholderResourceName);
+        
+        private bool _isEditMode = false;
+        private EventEntity _editingEventEntity;
+
         public EventsAddPage()
         {
             this.InitializeComponent();
@@ -35,14 +52,54 @@ namespace App2.Pages
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            NameTextBox.Text = NameTextBoxDefaultString;
-            DescriptionTextBox.Text = DescriptionTextBoxDefaultString;
+            SetButtonNames(TasksButton, EventsButton, LecturersButton, SubjectsButton);
 
-            PriorityComboBox.Items.Insert(0, ScheduleActionPriority.Low.ToString());
-            PriorityComboBox.Items.Insert(1, ScheduleActionPriority.Normal.ToString());
-            PriorityComboBox.Items.Insert(2, ScheduleActionPriority.High.ToString());
+            if (e.Parameter is string)
+            {
+                _isEditMode = true;
+                var rawIdForAnItemToEdit = e.Parameter as string;
 
-            var Places = GenericRepo<PlaceEntity>.GetSome();
+                _editingEventEntity =
+                    GenericRepo<EventEntity>.Get(
+                        Guid.Parse(rawIdForAnItemToEdit.Substring(rawIdForAnItemToEdit.Length - GuidLength, GuidLength)));
+
+                NameTextBox.Text = string.IsNullOrEmpty(_editingEventEntity.Name)
+                    ? _nameTextBoxDefaultString
+                    : _editingEventEntity.Name;
+
+                StartDatePicker.Date = _editingEventEntity.StartDate;
+                EndDatePicker.Date = _editingEventEntity.EndDate;
+
+                PlaceComboBox.PlaceholderText = string.IsNullOrEmpty(_editingEventEntity.Place)
+                    ? _placeComboBoxDefaultPlaceholder
+                    : _editingEventEntity.Place;
+
+                PriorityComboBox.PlaceholderText = string.IsNullOrEmpty(_editingEventEntity.Priority.ToString())
+                    ? _priorityComboBoxDefaultPlaceholder
+                    : _editingEventEntity.Priority.ToString().Localize();
+
+                DescriptionTextBox.Text = string.IsNullOrEmpty(_editingEventEntity.Description)
+                    ? _descriptionTextBoxDefaultString
+                    : _editingEventEntity.Description;
+            }
+            else
+            {
+                NameTextBox.Text = _nameTextBoxDefaultString;
+                DescriptionTextBox.Text = _descriptionTextBoxDefaultString;
+                PlaceComboBox.PlaceholderText = _placeComboBoxDefaultPlaceholder;
+                PriorityComboBox.PlaceholderText = _priorityComboBoxDefaultPlaceholder;
+            }
+
+            StartTextBox.Text = GlobalResourceLoader.GetString(StartTextBoxResourceName);
+            EndTextBox.Text = GlobalResourceLoader.GetString(EndTextBoxResourceName);
+            AddButton.Content = _isEditMode ? GlobalResourceLoader.GetString(EditButtonResourceName) : GlobalResourceLoader.GetString(AddButtonTextResourceName);
+            CancelButton.Content = GlobalResourceLoader.GetString(CancelButtonTextResourceName);
+
+            PriorityComboBox.Items.Insert(0, ScheduleActionPriority.Low.ToString().Localize());
+            PriorityComboBox.Items.Insert(1, ScheduleActionPriority.Normal.ToString().Localize());
+            PriorityComboBox.Items.Insert(2, ScheduleActionPriority.High.ToString().Localize());
+
+            var Places = GenericRepo<PlaceEntity>.GetAll();
 
             for (var i = 0; i < Places.Count; i++)
             {
@@ -50,31 +107,28 @@ namespace App2.Pages
             }
         }
 
-        private const string NameTextBoxDefaultString = "Name";
-        private const string DescriptionTextBoxDefaultString = "Description";
-
         private void NameTextBoxGotFocus(object sender, RoutedEventArgs e)
         {
-            if (NameTextBox.Text.Trim() == NameTextBoxDefaultString)
+            if (NameTextBox.Text.Trim() == _nameTextBoxDefaultString)
                 NameTextBox.Text = string.Empty;
         }
 
         private void NameTextBoxLostFocus(object sender, RoutedEventArgs e)
         {
             if (string.IsNullOrWhiteSpace(NameTextBox.Text))
-                NameTextBox.Text = NameTextBoxDefaultString;
+                NameTextBox.Text = _nameTextBoxDefaultString;
         }
 
         private void DescriptionTextBoxGotFocus(object sender, RoutedEventArgs e)
         {
-            if (DescriptionTextBox.Text.Trim() == DescriptionTextBoxDefaultString)
+            if (DescriptionTextBox.Text.Trim() == _descriptionTextBoxDefaultString)
                 DescriptionTextBox.Text = string.Empty;
         }
 
         private void DescriptionTextBoxLostFocus(object sender, RoutedEventArgs e)
         {
             if (string.IsNullOrWhiteSpace(DescriptionTextBox.Text))
-                DescriptionTextBox.Text = DescriptionTextBoxDefaultString;
+                DescriptionTextBox.Text = _descriptionTextBoxDefaultString;
         }
 
         private async void AddButtonTap(object sender, TappedRoutedEventArgs e)
@@ -98,7 +152,13 @@ namespace App2.Pages
             };
 
             if (!(string.IsNullOrWhiteSpace(eventEntityToAdd.Name) && !(string.IsNullOrWhiteSpace(eventEntityToAdd.Description))))
+            {
+                if (_isEditMode)
+                {
+                    GenericRepo<EventEntity>.Delete(_editingEventEntity.Id);
+                }
                 GenericRepo<EventEntity>.Insert(eventEntityToAdd);
+            }
 
             RootFrame.Navigate(typeof(EventsViewPage), e);
         }

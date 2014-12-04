@@ -1,30 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
+﻿// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
+
+using System;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
-using App1.Entities;
 using App2.Entities;
-using App2.Pages;
 
-namespace App1.Pages
+namespace App2.Pages
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     public sealed partial class SubjectsViewPage : NavBar
     {
+        private const string AddSubjectResourceName = "AddSubjectButtonText";
+        private const string EditSubjectResourceName = "EditSubjectButtonText";
+
         public SubjectsViewPage()
         {
             this.InitializeComponent();
@@ -37,17 +29,32 @@ namespace App1.Pages
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            var items = GenericRepo<SubjectEntity>.GetSome();
+            SetButtonNames(TasksButton, EventsButton, LecturersButton, SubjectsButton);
 
-            SubjectsGridView.ItemsSource = items.Select(x => string.Format("{0,-15}{1,-15}{2,-10}", /*items.IndexOf(x).ToString(), */x.Name, x.Description, x.EvaluationType));
+            AddSubjectButton.Content = GlobalResourceLoader.GetString(AddSubjectResourceName);
+            EditSubjectButton.Content = GlobalResourceLoader.GetString(EditSubjectResourceName);
+            var items = GenericRepo<SubjectEntity>.GetAll();
 
+            SubjectsGridView.ItemsSource = items.Select(x => string.Format("{0,-15}{1,-15}{2,100}", /*items.IndexOf(x).ToString(), */x.Name, x.EvaluationType, x.Id.ToString()));
+
+            DeleteSubjectButton.IsEnabled = false;
             EditSubjectButton.IsEnabled = false;
             AddSubjectButton.IsEnabled = true;
         }
 
         private void SubjectsGridViewSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            DeleteSubjectButton.IsEnabled = true;
             EditSubjectButton.IsEnabled = true;
+        }
+
+        private void DeleteSubjectButtonTap(object sender, TappedRoutedEventArgs e)
+        {
+            var selectedItemString = SubjectsGridView.SelectedItem.ToString();
+
+            GenericRepo<SubjectEntity>.Delete(Guid.Parse(selectedItemString.Substring(selectedItemString.Length - GuidLength, GuidLength)));
+
+            RootFrame.Navigate(typeof(SubjectsViewPage));
         }
 
         private void AddSubjectButtonTap(object sender, TappedRoutedEventArgs e)
@@ -57,7 +64,7 @@ namespace App1.Pages
 
         private void EditSubjectButtonTap(object sender, TappedRoutedEventArgs e)
         {
-            RootFrame.Navigate(typeof(SubjectsAddPage), SubjectsGridView.SelectedItem);
+            RootFrame.Navigate(typeof (SubjectsAddPage), SubjectsGridView.SelectedItem);
         }
     }
 }

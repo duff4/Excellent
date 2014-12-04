@@ -2,11 +2,10 @@
 <Roots >
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application" />
-    <RootType FullName="App1.Pages.NavBar">
-      <RootProperty Name="Background" />
+    <RootType FullName="App2.Pages.NavBar">
       <RootProperty Name="Content" />
+      <RootProperty Name="Background" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Background" />
       <RootProperty Name="Children" />
@@ -24,11 +23,9 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Padding" />
       <RootProperty Name="Foreground" />
-      <RootProperty Name="Visibility" />
       <RootEvent Name="Click" />
       <RootEvent Name="Tapped" />
     </RootType>
-    <RootType FullName="App1.Pages.CalendarViewPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
@@ -44,27 +41,14 @@
       <RootEvent Name="GotFocus" />
       <RootEvent Name="LostFocus" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="DayVisible" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="PlaceholderText" />
-    </RootType>
-    <RootType FullName="App2.Pages.EventsAddPage" />
+    <RootType FullName="App2.Pages.LecturersAddPage" />
+    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.GridView">
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Width" />
       <RootProperty Name="BorderBrush" />
+      <RootProperty Name="MaxHeight" />
       <RootProperty Name="ItemsPanel" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
@@ -86,14 +70,19 @@
       <RootProperty Name="Orientation" />
       <RootProperty Name="ItemWidth" />
     </RootType>
-    <RootType FullName="App1.Pages.EventsViewPage" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+    <RootType FullName="App2.Pages.LecturersViewPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="DayVisible" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
-      <RootProperty Name="Source" />
+      <RootProperty Name="PlaceholderText" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="HorizontalAlignment" />
@@ -102,12 +91,15 @@
       <RootProperty Name="Text" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="FontSize" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Foreground" />
     </RootType>
-    <RootType FullName="App1.Pages.IndexPage" />
+    <RootType FullName="App2.Pages.EventsAddPage" />
+    <RootType FullName="App2.Pages.EventsViewPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="App2.Pages.LanguageChoice" />
     <RootType FullName="App2.Pages.SubjectsAddPage" />
-    <RootType FullName="App1.Pages.SubjectsViewPage" />
+    <RootType FullName="App2.Pages.SubjectsViewPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
       <RootProperty Name="Content" />
       <RootProperty Name="HorizontalAlignment" />
@@ -116,7 +108,7 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
     </RootType>
-    <RootType FullName="App1.Pages.TasksAddPage" />
-    <RootType FullName="App1.TasksViewPage" />
+    <RootType FullName="App2.Pages.TasksAddPage" />
+    <RootType FullName="App2.Pages.TasksViewPage" />
   </Roots.RootTypes>
 </Roots>

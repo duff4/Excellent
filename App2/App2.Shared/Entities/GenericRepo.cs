@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Windows.Storage;
 using SQLite;
 
-namespace App1.Entities
+namespace App2.Entities
 {
     public static class GenericRepo<TEntity> where TEntity : class, IEntity, new()
     {
-        public static string DatabasePath = Path.Combine(ApplicationData.Current.LocalFolder.Path, "db.sqlite");
+        private static string DatabasePath = Path.Combine(ApplicationData.Current.LocalFolder.Path, "db.sqlite");
 
         public static void CreateTable()
         {
@@ -28,18 +25,25 @@ namespace App1.Entities
             return sqldbConnection.Insert(objectToInsert);
         }
 
-        public static int Update(object objectToUpdate)
+        public static int Update(IEnumerable objectsToUpdate)
         {
             var sqldbConnection = new SQLiteConnection(DatabasePath);
 
-            return sqldbConnection.Update(objectToUpdate);
+            return sqldbConnection.UpdateAll(objectsToUpdate);
         }
 
-        public static int Delete(object objectToDelete)
+        public static int Delete(object primaryKey)
         {
             var sqldbConnection = new SQLiteConnection(DatabasePath);
 
-            return sqldbConnection.Delete<TEntity>(objectToDelete);
+            return sqldbConnection.Delete<TEntity>(primaryKey);
+        }
+
+        public static void DeleteAll()
+        {
+            var sqldbConnection = new SQLiteConnection(DatabasePath);
+
+            sqldbConnection.DeleteAll<TEntity>();
         }
 
         public static TEntity Get(object primaryKey)
@@ -49,25 +53,25 @@ namespace App1.Entities
             return sqldbConnection.Get<TEntity>(primaryKey);
         }
 
-        public static ObservableCollection<TEntity> GetSome(int quantity = -1)
+        public static ObservableCollection<TEntity> GetAll()
         {
             var sqldbConnection = new SQLiteConnection(DatabasePath);
             var itemsToAdd = new ObservableCollection<TEntity>();
 
-            if (quantity == -1)
+            foreach (var entity in sqldbConnection.Table<TEntity>())
             {
-                foreach (var entity in sqldbConnection.Table<TEntity>())
-                {
-                    itemsToAdd.Add(entity);
-                }
-                return itemsToAdd;
+                itemsToAdd.Add(entity);
             }
-
             return itemsToAdd;
-            //var itemsToAdd = sqldbConnection.Table<TEntity>().Take(quantity);
-
-            //return itemsToAdd as ObservableCollection<TEntity>;
         }
+
+        public static TEntity GetFirst()
+        {
+            var sqldbConnection = new SQLiteConnection(DatabasePath);
+
+            return sqldbConnection.Table<TEntity>().Any() ? sqldbConnection.Table<TEntity>().ElementAt(0) : null;
+        }
+
     }
 }
 
