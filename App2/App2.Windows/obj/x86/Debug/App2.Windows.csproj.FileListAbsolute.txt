@@ -71,3 +71,11 @@ C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\ob
 C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Pages\LecturersAddPage.xbf
 C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\x86\Debug\Pages\LecturersAddPage.xaml
 C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\x86\Debug\Pages\LecturersAddPage.xbf
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Pages\LogInPage.xbf
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\x86\Debug\Pages\LogInPage.g.i.cs
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\x86\Debug\Pages\LogInPage.g.cs
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\x86\Debug\Pages\LogInPage.xaml
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\x86\Debug\Pages\LogInPage.xbf
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Newtonsoft.Json.dll
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\x86\Debug\Newtonsoft.Json.xml
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\x86\Debug\App2.Windows.csprojResolveAssemblyReference.cache

@@ -6,6 +6,8 @@ using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Navigation;
 using App2.Entities;
+using App2.MyJsonedHTTP;
+using App2.ServerEntities;
 
 namespace App2.Pages
 {
@@ -16,6 +18,7 @@ namespace App2.Pages
     {
         private const string AddSubjectResourceName = "AddSubjectButtonText";
         private const string EditSubjectResourceName = "EditSubjectButtonText";
+        private const string DeleteSubjectsResourceName = "DeleteSubjectsButtonText";
 
         public SubjectsViewPage()
         {
@@ -33,6 +36,8 @@ namespace App2.Pages
 
             AddSubjectButton.Content = GlobalResourceLoader.GetString(AddSubjectResourceName);
             EditSubjectButton.Content = GlobalResourceLoader.GetString(EditSubjectResourceName);
+            DeleteSubjectButton.Content = GlobalResourceLoader.GetString(DeleteSubjectsResourceName);
+
             var items = GenericRepo<SubjectEntity>.GetAll();
 
             SubjectsGridView.ItemsSource = items.Select(x => string.Format("{0,-15}{1,-15}{2,100}", /*items.IndexOf(x).ToString(), */x.Name, x.EvaluationType, x.Id.ToString()));

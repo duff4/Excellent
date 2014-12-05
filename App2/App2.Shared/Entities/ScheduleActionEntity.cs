@@ -11,6 +11,7 @@ namespace App2.Entities
         public bool ShowOnDisplay { get; set; }
         [PrimaryKey, AutoIncrement, Unique]
         public Guid Id { get; set; }
+        public Guid UserId { get; set; }
         public ScheduleActionPriority Priority { get; set; }
     }
 }

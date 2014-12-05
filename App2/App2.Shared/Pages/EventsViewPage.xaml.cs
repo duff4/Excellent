@@ -16,6 +16,7 @@ namespace App2.Pages
     {
         private const string AddEventResourceName = "AddEventButtonText";
         private const string EditEventResourceName = "EditEventButtonText";
+        private const string DeleteEventResourceName = "DeleteEventButtonText";
 
         public EventsViewPage()
         {
@@ -33,6 +34,7 @@ namespace App2.Pages
 
             AddEventButton.Content = GlobalResourceLoader.GetString(AddEventResourceName);
             EditEventButton.Content = GlobalResourceLoader.GetString(EditEventResourceName);
+            DeleteEventButton.Content = GlobalResourceLoader.GetString(DeleteEventResourceName);
 
             var items = GenericRepo<EventEntity>.GetAll();
 

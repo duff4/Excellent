@@ -71,3 +71,10 @@ C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\ob
 C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\ARM\Release\qualifiers.txt.intermediate
 C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\ARM\Release\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\ARM\Release\ProjectArchitectures.txt
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\ARM\Release\Pages\LogInPage.xbf
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\ARM\Release\Newtonsoft.Json.dll
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\bin\ARM\Release\Newtonsoft.Json.xml
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\ARM\Release\Pages\LogInPage.g.i.cs
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\ARM\Release\Pages\LogInPage.g.cs
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\ARM\Release\Pages\LogInPage.xaml
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\ARM\Release\Pages\LogInPage.xbf

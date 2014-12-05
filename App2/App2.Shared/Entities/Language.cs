@@ -12,5 +12,7 @@ namespace App2.Entities
 
         [PrimaryKey, AutoIncrement, Unique]
         public Guid Id { get; set; }
+
+        public Guid UserId { get; set; }
     }
 }

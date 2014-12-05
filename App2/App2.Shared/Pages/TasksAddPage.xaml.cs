@@ -74,15 +74,15 @@ namespace App2.Pages
                     ? _difficultyComboBoxDefaultPlaceholder.Localize()
                     : _editingTaskEntity.Difficulty.ToString().Localize();
 
-                SubjectComboBox.PlaceholderText = string.IsNullOrEmpty(_editingTaskEntity.Subject)
+                SubjectComboBox.PlaceholderText = string.IsNullOrEmpty(_editingTaskEntity.ActivityId)
                     ? _subjectComboBoxDefaultPlaceholder
-                    : _editingTaskEntity.Subject;
+                    : _editingTaskEntity.ActivityId;
 
-                LecturerComboBox.PlaceholderText = string.IsNullOrEmpty(_editingTaskEntity.Lecturer)
+                LecturerComboBox.PlaceholderText = string.IsNullOrEmpty(_editingTaskEntity.LecturerId)
                     ? _lecturerComboBoxDefaultPlaceholder
-                    : _editingTaskEntity.Lecturer;
+                    : _editingTaskEntity.LecturerId;
 
-                IsCompletedCheckBox.IsChecked = _editingTaskEntity.IsCompleted;
+                IsCompletedCheckBox.IsChecked = _editingTaskEntity.Completed;
             }
             else
             {
@@ -149,10 +149,12 @@ namespace App2.Pages
                 Name = string.IsNullOrWhiteSpace(NameTextBox.Text) ? default(string) : NameTextBox.Text.Trim(),
                 Description = string.IsNullOrWhiteSpace(DescriptionTextBox.Text) ? default(string) : DescriptionTextBox.Text.Trim(),
                 Difficulty = DifficultyComboBox.SelectedItem == null ? TaskEntityDifficulty.Easy : (TaskEntityDifficulty)Enum.ToObject(typeof(TaskEntityDifficulty), DifficultyComboBox.Items.IndexOf(DifficultyComboBox.SelectedItem)),
-                Subject = SubjectComboBox.SelectedItem == null ? default(string) : SubjectComboBox.SelectedItem.ToString(),
-                Lecturer = LecturerComboBox.SelectedItem == null ? default(string) : LecturerComboBox.SelectedItem.ToString(),
+                ActivityId = SubjectComboBox.SelectedItem == null ? default(string) : SubjectComboBox.SelectedItem.ToString(),
+                LecturerId = LecturerComboBox.SelectedItem == null ? default(string) : LecturerComboBox.SelectedItem.ToString(),
                 DeadLine = DatePicker.Date,
-                IsCompleted = IsCompletedCheckBox.IsChecked.Value
+                Completed = IsCompletedCheckBox.IsChecked.Value,
+                UserId = GenericRepo<ServerCredentials>.GetFirst().Id,
+                Updated = DateTime.Now
             };
 
             if (!(string.IsNullOrWhiteSpace(taskEntityToAdd.Name) && !(string.IsNullOrWhiteSpace(taskEntityToAdd.Description))))

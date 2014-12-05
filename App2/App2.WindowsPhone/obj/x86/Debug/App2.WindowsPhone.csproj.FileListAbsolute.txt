@@ -71,3 +71,10 @@ C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPho
 C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\obj\x86\Debug\Pages\LecturersViewPage.xaml
 C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\obj\x86\Debug\Pages\LecturersAddPage.xbf
 C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\obj\x86\Debug\Pages\LecturersViewPage.xbf
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\Pages\LogInPage.xbf
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\obj\x86\Debug\Pages\LogInPage.g.i.cs
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\obj\x86\Debug\Pages\LogInPage.g.cs
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\obj\x86\Debug\Pages\LogInPage.xaml
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\obj\x86\Debug\Pages\LogInPage.xbf
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\Newtonsoft.Json.dll
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\Newtonsoft.Json.xml

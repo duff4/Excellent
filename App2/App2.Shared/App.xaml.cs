@@ -47,8 +47,9 @@ namespace App2
             GenericRepo<LecturerEntity>.CreateTable();
             GenericRepo<PlaceEntity>.CreateTable();
             GenericRepo<EventEntity>.CreateTable();
-            GenericRepo<FirstTimeLaunch>.CreateTable();
+            //GenericRepo<FirstTimeLaunch>.CreateTable();
             GenericRepo<Language>.CreateTable();
+            GenericRepo<ServerCredentials>.CreateTable();
         }
 
         /// <summary>
@@ -90,7 +91,7 @@ namespace App2
             if (rootFrame.Content == null)
             {
 #if WINDOWS_PHONE_APP
-                // Removes the turnstile navigation for startup.
+    // Removes the turnstile navigation for startup.
                 if (rootFrame.ContentTransitions != null)
                 {
                     this.transitions = new TransitionCollection();
@@ -109,29 +110,33 @@ namespace App2
                 // parameter
 
                 //Uncomment to laucnh App like first time
-                GenericRepo<FirstTimeLaunch>.DeleteAll();
+                GenericRepo<Language>.DeleteAll();
+                GenericRepo<ServerCredentials>.DeleteAll();
 
-                var firstTimeLauchItem = GenericRepo<FirstTimeLaunch>.GetAll();
+                //Uncomment to drop all
+                /*
+                GenericRepo<TaskEntity>.DeleteAll();
+                GenericRepo<EventEntity>.DeleteAll();
+                GenericRepo<ActivityEntity>.DeleteAll();
+                GenericRepo<SubjectEntity>.DeleteAll();
+                GenericRepo<LecturerEntity>.DeleteAll();
+                GenericRepo<PlaceEntity>.DeleteAll();
+                */
 
-                if (firstTimeLauchItem.Count == 0)
+                if (GenericRepo<Language>.GetAll().Any())
                 {
-                    GenericRepo<FirstTimeLaunch>.Insert(new FirstTimeLaunch {IsFirstTimeLaunch = false});
-                    if (!rootFrame.Navigate(typeof(LanguageChoice), e.Arguments))
-                    {
-                        throw new Exception("Failed to create initial page");
-                    }
+                    rootFrame.Navigate(GenericRepo<ServerCredentials>.GetAll().Any()
+                        ? typeof (TasksViewPage)
+                        : typeof (LogInPage));
                 }
                 else
                 {
-                    if (!rootFrame.Navigate(typeof(TasksViewPage), e.Arguments))
-                    {
-                        throw new Exception("Failed to create initial page");
-                    }
+                    rootFrame.Navigate(typeof (LanguageChoice));
                 }
-            }
 
-            // Ensure the current window is active
-            Window.Current.Activate();
+                // Ensure the current window is active
+                Window.Current.Activate();
+            }
         }
 
 #if WINDOWS_PHONE_APP

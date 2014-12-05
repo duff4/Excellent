@@ -7,5 +7,7 @@ namespace App2.Entities
     {
         [PrimaryKey, AutoIncrement, Unique]
         Guid Id { get; set; }
+
+        Guid UserId { get; set; }
     }
 }

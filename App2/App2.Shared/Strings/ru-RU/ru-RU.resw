@@ -237,4 +237,25 @@
   <data name="EditButtonText" xml:space="preserve">
     <value>Сохранить</value>
   </data>
+  <data name="DeleteEventButtonText" xml:space="preserve">
+    <value>Удалить Событие</value>
+  </data>
+  <data name="DeleteLecturerButtonText" xml:space="preserve">
+    <value>Удалить Лектора</value>
+  </data>
+  <data name="DeleteSubjectsButtonText" xml:space="preserve">
+    <value>Удалить Предмет</value>
+  </data>
+  <data name="DeleteTaskButtonText" xml:space="preserve">
+    <value>Удалить Задание</value>
+  </data>
+  <data name="LogInButtonString" xml:space="preserve">
+    <value>Войти</value>
+  </data>
+  <data name="LogInTextBlockString" xml:space="preserve">
+    <value>Введите имя пользователя и пароль</value>
+  </data>
+  <data name="UserNameTextBoxString" xml:space="preserve">
+    <value>Имя пользователя</value>
+  </data>
 </root>

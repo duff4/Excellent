@@ -17,6 +17,7 @@ namespace App2.Pages
     {
         private const string AddTaskResourceName = "AddTaskButtonText";
         private const string EditTaskResourceName = "EditTaskButtonText";
+        private const string DeleteTaskResourceName = "DeleteTaskButtonText";
 
         public TasksViewPage()
         {
@@ -34,6 +35,7 @@ namespace App2.Pages
 
             AddTaskButton.Content = GlobalResourceLoader.GetString(AddTaskResourceName);
             EditTaskButton.Content = GlobalResourceLoader.GetString(EditTaskResourceName);
+            DeleteTaskButton.Content = GlobalResourceLoader.GetString(DeleteTaskResourceName);
 
             var items = GenericRepo<TaskEntity>.GetAll();
 

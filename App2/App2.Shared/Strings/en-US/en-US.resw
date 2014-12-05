@@ -237,4 +237,25 @@
   <data name="EditButtonText" xml:space="preserve">
     <value>Save</value>
   </data>
+  <data name="DeleteEventButtonText" xml:space="preserve">
+    <value>Delete Event</value>
+  </data>
+  <data name="DeleteLecturerButtonText" xml:space="preserve">
+    <value>Delete Lecturer</value>
+  </data>
+  <data name="DeleteSubjectsButtonText" xml:space="preserve">
+    <value>Delete Subject</value>
+  </data>
+  <data name="DeleteTaskButtonText" xml:space="preserve">
+    <value>Delete Task</value>
+  </data>
+  <data name="LogInButtonString" xml:space="preserve">
+    <value>Log In</value>
+  </data>
+  <data name="LogInTextBlockString" xml:space="preserve">
+    <value>Input your user name and password</value>
+  </data>
+  <data name="UserNameTextBoxString" xml:space="preserve">
+    <value>User Name</value>
+  </data>
 </root>

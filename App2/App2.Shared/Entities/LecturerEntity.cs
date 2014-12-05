@@ -12,5 +12,7 @@ namespace App2.Entities
         public string AdditionalInformation { get; set; }
         [PrimaryKey, AutoIncrement, Unique]
         public Guid Id { get; set; }
+        public Guid UserId { get; set; }
+        public DateTime Updated { get; set; }
     }
 }

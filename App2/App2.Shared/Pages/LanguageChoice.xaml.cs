@@ -44,19 +44,21 @@ namespace App2.Pages
         {
             SetCulture(EnglishCultureString);
 
-            Frame.Navigate(typeof (TasksViewPage));
+            GoToLogInPageIfNotLoggedIn();
         }
 
         private void UkrainianLanguageButtonTap(object sender, TappedRoutedEventArgs e)
         {
             SetCulture(UkrainianCultureString);
-            Frame.Navigate(typeof(TasksViewPage));
+
+            GoToLogInPageIfNotLoggedIn();
         }
 
         private void RussianLanguageButtonTap(object sender, TappedRoutedEventArgs e)
         {
             SetCulture(RussianCultureString);
-            Frame.Navigate(typeof(TasksViewPage));
+
+            GoToLogInPageIfNotLoggedIn();
         }
 
         private void SetCulture(string cultureInfoString)
@@ -69,6 +71,11 @@ namespace App2.Pages
             var languageToAdd = new Language { SelectedCultureString = cultureInfoString};
 
             GenericRepo<Language>.Insert(languageToAdd);
+        }
+
+        private void GoToLogInPageIfNotLoggedIn()
+        {
+            Frame.Navigate(!GenericRepo<ServerCredentials>.GetAll().Any() ? typeof (LogInPage) : typeof (TasksViewPage));
         }
     }
 }

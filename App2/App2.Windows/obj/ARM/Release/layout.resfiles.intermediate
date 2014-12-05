@@ -17,6 +17,7 @@ Pages\EventsViewPage.xbf
 Pages\LanguageChoice.xbf
 Pages\LecturersAddPage.xbf
 Pages\LecturersViewPage.xbf
+Pages\LogInPage.xbf
 Pages\SubjectsAddPage.xbf
 Pages\SubjectsViewPage.xbf
 Pages\TasksAddPage.xbf

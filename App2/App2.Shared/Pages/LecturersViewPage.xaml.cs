@@ -16,6 +16,7 @@ namespace App2.Pages
     {
         private const string AddLecturerResourceName = "AddLecturerButtonText";
         private const string EditLecturerResourceName = "EditLecturerButtonText";
+        private const string DeleteLecturerResourceName = "DeleteLecturerButtonText";
 
         public LecturersViewPage()
         {
@@ -32,6 +33,7 @@ namespace App2.Pages
             SetButtonNames(TasksButton, EventsButton, LecturersButton, SubjectsButton);
             AddLecturerButton.Content = GlobalResourceLoader.GetString(AddLecturerResourceName);
             EditLecturerButton.Content = GlobalResourceLoader.GetString(EditLecturerResourceName);
+            DeleteLecturerButton.Content = GlobalResourceLoader.GetString(DeleteLecturerResourceName);
 
             var items = GenericRepo<LecturerEntity>.GetAll();
 

@@ -115,17 +115,19 @@ namespace App2.Pages
 
         private async void AddButtonTap(object sender, TappedRoutedEventArgs e)
         {
-            var eventEntityToAdd = new LecturerEntity
+            var lecturerEntityToAdd = new LecturerEntity
             {
                 Name = string.IsNullOrWhiteSpace(NameTextBox.Text) ? default(string) : NameTextBox.Text.Trim(),
                 AdditionalInformation = string.IsNullOrWhiteSpace(AdditionalInformationTextBox.Text) ? default(string) : NameTextBox.Text.Trim(),
                 Email = string.IsNullOrWhiteSpace(EmailTextBox.Text) ? default(string) : EmailTextBox.Text.Trim(),
                 Phone = string.IsNullOrWhiteSpace(PhoneTextBox.Text) ? default(string) : PhoneTextBox.Text.Trim(),
-                Position = string.IsNullOrWhiteSpace(PositionTextBox.Text) ? default(string) : PositionTextBox.Text.Trim()
+                Position = string.IsNullOrWhiteSpace(PositionTextBox.Text) ? default(string) : PositionTextBox.Text.Trim(),
+                UserId = GenericRepo<ServerCredentials>.GetFirst().Id,
+                Updated = DateTime.Now
             };
 
-            if (!(string.IsNullOrWhiteSpace(eventEntityToAdd.Name)))
-                GenericRepo<EventEntity>.Insert(eventEntityToAdd);
+            if (!(string.IsNullOrWhiteSpace(lecturerEntityToAdd.Name)))
+                GenericRepo<EventEntity>.Insert(lecturerEntityToAdd);
 
             RootFrame.Navigate(typeof(LecturersViewPage), e);
         }

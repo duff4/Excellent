@@ -148,7 +148,9 @@ namespace App2.Pages
                 Description = string.IsNullOrWhiteSpace(DescriptionTextBox.Text) ? default(string) : DescriptionTextBox.Text.Trim(),
                 Priority = PriorityComboBox.SelectedItem == null ? ScheduleActionPriority.Low : (ScheduleActionPriority)Enum.ToObject(typeof(ScheduleActionPriority), PriorityComboBox.Items.IndexOf(PriorityComboBox.SelectedItem)),
                 StartDate = StartDatePicker.Date,
-                EndDate = EndDatePicker.Date
+                EndDate = EndDatePicker.Date,
+                UserId = GenericRepo<ServerCredentials>.GetFirst().Id,
+                Updated = DateTime.Now
             };
 
             if (!(string.IsNullOrWhiteSpace(eventEntityToAdd.Name) && !(string.IsNullOrWhiteSpace(eventEntityToAdd.Description))))
