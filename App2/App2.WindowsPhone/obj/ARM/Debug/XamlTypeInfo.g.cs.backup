@@ -124,31 +124,35 @@ namespace App2.App2_WindowsPhone_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[11];
-            _typeNameTable[0] = "App1.Pages.NavBar";
+            _typeNameTable = new string[13];
+            _typeNameTable[0] = "App2.Pages.NavBar";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "App1.Pages.CalendarViewPage";
-            _typeNameTable[4] = "App2.Pages.EventsAddPage";
-            _typeNameTable[5] = "App1.Pages.EventsViewPage";
-            _typeNameTable[6] = "App1.Pages.IndexPage";
-            _typeNameTable[7] = "App2.Pages.SubjectsAddPage";
-            _typeNameTable[8] = "App1.Pages.SubjectsViewPage";
-            _typeNameTable[9] = "App1.Pages.TasksAddPage";
-            _typeNameTable[10] = "App1.TasksViewPage";
+            _typeNameTable[3] = "App2.Pages.LecturersAddPage";
+            _typeNameTable[4] = "App2.Pages.LecturersViewPage";
+            _typeNameTable[5] = "App2.Pages.EventsAddPage";
+            _typeNameTable[6] = "App2.Pages.EventsViewPage";
+            _typeNameTable[7] = "App2.Pages.LanguageChoice";
+            _typeNameTable[8] = "App2.Pages.LogInPage";
+            _typeNameTable[9] = "App2.Pages.SubjectsAddPage";
+            _typeNameTable[10] = "App2.Pages.SubjectsViewPage";
+            _typeNameTable[11] = "App2.Pages.TasksAddPage";
+            _typeNameTable[12] = "App2.Pages.TasksViewPage";
 
-            _typeTable = new global::System.Type[11];
-            _typeTable[0] = typeof(global::App1.Pages.NavBar);
+            _typeTable = new global::System.Type[13];
+            _typeTable[0] = typeof(global::App2.Pages.NavBar);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::App1.Pages.CalendarViewPage);
-            _typeTable[4] = typeof(global::App2.Pages.EventsAddPage);
-            _typeTable[5] = typeof(global::App1.Pages.EventsViewPage);
-            _typeTable[6] = typeof(global::App1.Pages.IndexPage);
-            _typeTable[7] = typeof(global::App2.Pages.SubjectsAddPage);
-            _typeTable[8] = typeof(global::App1.Pages.SubjectsViewPage);
-            _typeTable[9] = typeof(global::App1.Pages.TasksAddPage);
-            _typeTable[10] = typeof(global::App1.TasksViewPage);
+            _typeTable[3] = typeof(global::App2.Pages.LecturersAddPage);
+            _typeTable[4] = typeof(global::App2.Pages.LecturersViewPage);
+            _typeTable[5] = typeof(global::App2.Pages.EventsAddPage);
+            _typeTable[6] = typeof(global::App2.Pages.EventsViewPage);
+            _typeTable[7] = typeof(global::App2.Pages.LanguageChoice);
+            _typeTable[8] = typeof(global::App2.Pages.LogInPage);
+            _typeTable[9] = typeof(global::App2.Pages.SubjectsAddPage);
+            _typeTable[10] = typeof(global::App2.Pages.SubjectsViewPage);
+            _typeTable[11] = typeof(global::App2.Pages.TasksAddPage);
+            _typeTable[12] = typeof(global::App2.Pages.TasksViewPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -183,15 +187,17 @@ namespace App2.App2_WindowsPhone_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_NavBar() { return new global::App1.Pages.NavBar(); }
-        private object Activate_3_CalendarViewPage() { return new global::App1.Pages.CalendarViewPage(); }
-        private object Activate_4_EventsAddPage() { return new global::App2.Pages.EventsAddPage(); }
-        private object Activate_5_EventsViewPage() { return new global::App1.Pages.EventsViewPage(); }
-        private object Activate_6_IndexPage() { return new global::App1.Pages.IndexPage(); }
-        private object Activate_7_SubjectsAddPage() { return new global::App2.Pages.SubjectsAddPage(); }
-        private object Activate_8_SubjectsViewPage() { return new global::App1.Pages.SubjectsViewPage(); }
-        private object Activate_9_TasksAddPage() { return new global::App1.Pages.TasksAddPage(); }
-        private object Activate_10_TasksViewPage() { return new global::App1.TasksViewPage(); }
+        private object Activate_0_NavBar() { return new global::App2.Pages.NavBar(); }
+        private object Activate_3_LecturersAddPage() { return new global::App2.Pages.LecturersAddPage(); }
+        private object Activate_4_LecturersViewPage() { return new global::App2.Pages.LecturersViewPage(); }
+        private object Activate_5_EventsAddPage() { return new global::App2.Pages.EventsAddPage(); }
+        private object Activate_6_EventsViewPage() { return new global::App2.Pages.EventsViewPage(); }
+        private object Activate_7_LanguageChoice() { return new global::App2.Pages.LanguageChoice(); }
+        private object Activate_8_LogInPage() { return new global::App2.Pages.LogInPage(); }
+        private object Activate_9_SubjectsAddPage() { return new global::App2.Pages.SubjectsAddPage(); }
+        private object Activate_10_SubjectsViewPage() { return new global::App2.Pages.SubjectsViewPage(); }
+        private object Activate_11_TasksAddPage() { return new global::App2.Pages.TasksAddPage(); }
+        private object Activate_12_TasksViewPage() { return new global::App2.Pages.TasksViewPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -203,7 +209,7 @@ namespace App2.App2_WindowsPhone_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  App1.Pages.NavBar
+            case 0:   //  App2.Pages.NavBar
                 userType = new global::App2.App2_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_0_NavBar;
                 userType.SetIsLocalType();
@@ -218,58 +224,72 @@ namespace App2.App2_WindowsPhone_XamlTypeInfo
                 xamlType = new global::App2.App2_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  App1.Pages.CalendarViewPage
-                userType = new global::App2.App2_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("App1.Pages.NavBar"));
-                userType.Activator = Activate_3_CalendarViewPage;
+            case 3:   //  App2.Pages.LecturersAddPage
+                userType = new global::App2.App2_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("App2.Pages.NavBar"));
+                userType.Activator = Activate_3_LecturersAddPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  App2.Pages.EventsAddPage
-                userType = new global::App2.App2_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("App1.Pages.NavBar"));
-                userType.Activator = Activate_4_EventsAddPage;
+            case 4:   //  App2.Pages.LecturersViewPage
+                userType = new global::App2.App2_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("App2.Pages.NavBar"));
+                userType.Activator = Activate_4_LecturersViewPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  App1.Pages.EventsViewPage
-                userType = new global::App2.App2_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("App1.Pages.NavBar"));
-                userType.Activator = Activate_5_EventsViewPage;
+            case 5:   //  App2.Pages.EventsAddPage
+                userType = new global::App2.App2_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("App2.Pages.NavBar"));
+                userType.Activator = Activate_5_EventsAddPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 6:   //  App1.Pages.IndexPage
-                userType = new global::App2.App2_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("App1.Pages.NavBar"));
-                userType.Activator = Activate_6_IndexPage;
+            case 6:   //  App2.Pages.EventsViewPage
+                userType = new global::App2.App2_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("App2.Pages.NavBar"));
+                userType.Activator = Activate_6_EventsViewPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  App2.Pages.SubjectsAddPage
-                userType = new global::App2.App2_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("App1.Pages.NavBar"));
-                userType.Activator = Activate_7_SubjectsAddPage;
+            case 7:   //  App2.Pages.LanguageChoice
+                userType = new global::App2.App2_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_7_LanguageChoice;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 8:   //  App1.Pages.SubjectsViewPage
-                userType = new global::App2.App2_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("App1.Pages.NavBar"));
-                userType.Activator = Activate_8_SubjectsViewPage;
+            case 8:   //  App2.Pages.LogInPage
+                userType = new global::App2.App2_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("App2.Pages.NavBar"));
+                userType.Activator = Activate_8_LogInPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 9:   //  App1.Pages.TasksAddPage
-                userType = new global::App2.App2_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("App1.Pages.NavBar"));
-                userType.Activator = Activate_9_TasksAddPage;
+            case 9:   //  App2.Pages.SubjectsAddPage
+                userType = new global::App2.App2_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("App2.Pages.NavBar"));
+                userType.Activator = Activate_9_SubjectsAddPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 10:   //  App1.TasksViewPage
-                userType = new global::App2.App2_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("App1.Pages.NavBar"));
-                userType.Activator = Activate_10_TasksViewPage;
+            case 10:   //  App2.Pages.SubjectsViewPage
+                userType = new global::App2.App2_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("App2.Pages.NavBar"));
+                userType.Activator = Activate_10_SubjectsViewPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 11:   //  App2.Pages.TasksAddPage
+                userType = new global::App2.App2_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("App2.Pages.NavBar"));
+                userType.Activator = Activate_11_TasksAddPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 12:   //  App2.Pages.TasksViewPage
+                userType = new global::App2.App2_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("App2.Pages.NavBar"));
+                userType.Activator = Activate_12_TasksViewPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

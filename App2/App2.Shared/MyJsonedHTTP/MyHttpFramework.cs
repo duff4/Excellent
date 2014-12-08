@@ -21,7 +21,7 @@ namespace App2.MyJsonedHTTP
                 Encoding.UTF8.GetBytes(
                     JsonConvert.SerializeObject(objectToSerialize));
 
-            WebRequest clientRequest = (HttpWebRequest) WebRequest.Create(path);
+            HttpWebRequest clientRequest = (HttpWebRequest) WebRequest.Create(path);
 
             clientRequest.Method = "POST";
 
@@ -38,7 +38,7 @@ namespace App2.MyJsonedHTTP
             {
                 serverResponse = await clientRequest.GetResponseAsync();
             }
-            catch (WebException webEx)
+            catch (Exception webEx)
             {
                 possibleException = webEx;
             }

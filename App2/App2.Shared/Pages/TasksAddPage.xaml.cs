@@ -153,7 +153,7 @@ namespace App2.Pages
                 LecturerId = LecturerComboBox.SelectedItem == null ? default(string) : LecturerComboBox.SelectedItem.ToString(),
                 DeadLine = DatePicker.Date,
                 Completed = IsCompletedCheckBox.IsChecked.Value,
-                UserId = GenericRepo<ServerCredentials>.GetFirst().Id,
+                //UserId = GenericRepo<ServerCredentials>.GetFirst().Id,
                 Updated = DateTime.Now
             };
 

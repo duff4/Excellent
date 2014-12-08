@@ -39,7 +39,7 @@ namespace App2.Pages
 
             var items = GenericRepo<TaskEntity>.GetAll();
 
-            TasksGridView.ItemsSource = items.Select(x => string.Format("{0,-30}{1,-70}{2, 100}", /*items.IndexOf(x).ToString(), */x.Name/*, x.Description*/, x.DeadLine.Date.ToString("d"), x.Id));
+            TasksGridView.ItemsSource = items.Select(x => string.Format("{0,-30}{1,-70}{2, 200}", /*items.IndexOf(x).ToString(), */x.Name/*, x.Description*/, x.DeadLine.Date.ToString("d"), x.Id));
 
             DeleteTaskButton.IsEnabled = false;
             EditTaskButton.IsEnabled = false;

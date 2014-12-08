@@ -122,7 +122,7 @@ namespace App2.Pages
                 Email = string.IsNullOrWhiteSpace(EmailTextBox.Text) ? default(string) : EmailTextBox.Text.Trim(),
                 Phone = string.IsNullOrWhiteSpace(PhoneTextBox.Text) ? default(string) : PhoneTextBox.Text.Trim(),
                 Position = string.IsNullOrWhiteSpace(PositionTextBox.Text) ? default(string) : PositionTextBox.Text.Trim(),
-                UserId = GenericRepo<ServerCredentials>.GetFirst().Id,
+                //UserId = GenericRepo<ServerCredentials>.GetFirst().Id,
                 Updated = DateTime.Now
             };
 

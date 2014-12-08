@@ -78,3 +78,4 @@ C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\ob
 C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\ARM\Release\Pages\LogInPage.g.cs
 C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\ARM\Release\Pages\LogInPage.xaml
 C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\ARM\Release\Pages\LogInPage.xbf
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.Windows\obj\ARM\Release\App2.Windows.csprojResolveAssemblyReference.cache

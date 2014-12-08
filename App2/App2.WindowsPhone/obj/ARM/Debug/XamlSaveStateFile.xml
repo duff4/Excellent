@@ -1,6 +1,7 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\users\davydov\documents\visual studio 2013\projects\app1\app2\app2.windowsphone\obj\arm\debug\intermediatexaml\app2.windowsphone.exe" HashGuid="1b5fbd57-8096-6c0e-c7ca-baa388657a27" />
+    <LocalAssembly PathName="c:\users\davydov\documents\visual studio 2013\projects\app1\app2\app2.windowsphone\obj\arm\debug\intermediatexaml\app2.windowsphone.exe" HashGuid="a6ba3025-d887-74ac-53ab-63eff87eea56" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\microsoft.vclibs\12.0\references\commonconfiguration\neutral\platform.winmd" HashGuid="58b6b6d1-928e-9908-9804-eb460e5e101b" />
+    <ReferenceAssembly PathName="c:\users\davydov\documents\visual studio 2013\projects\app1\packages\newtonsoft.json.6.0.6\lib\portable-net40+sl5+wp80+win8+wpa81\newtonsoft.json.dll" HashGuid="9e796421-3b84-3ec5-6e39-cb6d41d020b7" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

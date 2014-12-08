@@ -12,10 +12,12 @@ Assets\SplashScreen.scale-100.png
 Assets\StoreLogo.scale-100.png
 App.xbf
 App2.Windows.xr.xml
-Pages\CalendarViewPage.xbf
 Pages\EventsAddPage.xbf
 Pages\EventsViewPage.xbf
-Pages\IndexPage.xbf
+Pages\LanguageChoice.xbf
+Pages\LecturersAddPage.xbf
+Pages\LecturersViewPage.xbf
+Pages\LogInPage.xbf
 Pages\SubjectsAddPage.xbf
 Pages\SubjectsViewPage.xbf
 Pages\TasksAddPage.xbf

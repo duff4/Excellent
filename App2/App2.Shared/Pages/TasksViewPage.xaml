@@ -14,7 +14,7 @@
         <Button x:Name="EventsButton" Content="EVENTS" HorizontalAlignment="Left" Margin="105,0,0,0" VerticalAlignment="Top" MinHeight="23" MinWidth="50" Height="60" BorderThickness="0" Width="95" Padding="0" Click="EventsButtonClick" Tapped="EventsButtonTap"/>
         <Button x:Name="LecturersButton" Content="LECTURERS" HorizontalAlignment="Left" Margin="200,0,0,0" VerticalAlignment="Top" BorderThickness="0" MinHeight="23" MinWidth="50" Width="95" Height="60" Padding="0" Click="LecturersButtonClick" Tapped="LecturersButtonTap"/>
         <Button x:Name="SubjectsButton" Content="SUBJECTS" HorizontalAlignment="Left" Margin="295,0,0,0" VerticalAlignment="Top" MinHeight="23" MinWidth="50" Padding="0" Width="95" BorderThickness="0" Height="60" Click="SubjectsButtonClick" Tapped="SubjectsButtonTap"/>
-        <Button x:Name="AddTaskButton" Content="Add Task" HorizontalAlignment="Left" Margin="15,0,0,15" VerticalAlignment="Bottom" Tapped="AddTaskButtonTap"/>
+        <Button x:Name="AddTaskButton" Content="Add Task" HorizontalAlignment="Center" Margin="0,0,0,105" VerticalAlignment="Bottom" Tapped="AddTaskButtonTap"/>
         <Button x:Name="DeleteTaskButton" Content="Delete Task" HorizontalAlignment="Center" Margin="0,0,0,15" VerticalAlignment="Bottom" Tapped="DeleteTaskButtonTap"/>
         <GridView ScrollViewer.VerticalScrollMode = "Auto" ScrollViewer.HorizontalScrollMode = "Disabled"  ScrollViewer.VerticalScrollBarVisibility = "Disabled" ScrollViewer.HorizontalScrollBarVisibility = "Disabled" x:Name="TasksGridView" HorizontalAlignment="Center" Margin="0,55,0,0" VerticalAlignment="Top" SelectionChanged="TasksGridViewSelectionChanged" BorderBrush="White" MaxHeight="400">
             <GridView.ItemsPanel>
@@ -23,6 +23,6 @@
                 </ItemsPanelTemplate>
             </GridView.ItemsPanel>
         </GridView>
-        <Button x:Name="EditTaskButton" Content="Edit Task" HorizontalAlignment="Right" Margin="0,0,15,15" VerticalAlignment="Bottom" Tapped="EditTaskButtonTap"/>
+        <Button x:Name="EditTaskButton" Content="Edit Task" HorizontalAlignment="Center" Margin="0,0,0,60" VerticalAlignment="Bottom" Tapped="EditTaskButtonTap"/>
     </Grid>
 </local:NavBar>

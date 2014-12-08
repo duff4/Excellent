@@ -149,7 +149,7 @@ namespace App2.Pages
                 Priority = PriorityComboBox.SelectedItem == null ? ScheduleActionPriority.Low : (ScheduleActionPriority)Enum.ToObject(typeof(ScheduleActionPriority), PriorityComboBox.Items.IndexOf(PriorityComboBox.SelectedItem)),
                 StartDate = StartDatePicker.Date,
                 EndDate = EndDatePicker.Date,
-                UserId = GenericRepo<ServerCredentials>.GetFirst().Id,
+                //UserId = GenericRepo<ServerCredentials>.GetFirst().Id,
                 Updated = DateTime.Now
             };
 

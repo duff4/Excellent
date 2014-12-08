@@ -15,8 +15,8 @@
         <TextBox x:ConnectionId='5' x:Name="NameTextBox" HorizontalAlignment="Left" Margin="10,55,0,0" TextWrapping="Wrap" Text ="Name" VerticalAlignment="Top" Width="380" TextAlignment="Center" FontSize="18" IsSpellCheckEnabled="True" Foreground="#FF7F7F7F"                                                                />
         <TextBox x:ConnectionId='6' x:Name="DescriptionTextBox" HorizontalAlignment="Left" Margin="10,297,0,0" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top" Width="380" Height="282" Foreground="#FF7F7F7F"                                                                              />
         <ComboBox x:Name="EvaluationTypeComboBox" HorizontalAlignment="Left" Margin="10,102,0,0" VerticalAlignment="Top" Width="380" PlaceholderText="Evaluation type"/>
-        <Button x:ConnectionId='7' x:Name="AddButton" Content="Add" HorizontalAlignment="Left" Margin="178,587,0,-4" VerticalAlignment="Top" Width="77"                      />
-        <Button x:ConnectionId='8' x:Name="CancelButton" Content="Cancel" HorizontalAlignment="Left" Margin="287,587,0,-4" VerticalAlignment="Top"                         />
+        <Button x:ConnectionId='7' x:Name="AddButton" Content="Add" HorizontalAlignment="Left" Margin="178,587,0,0" VerticalAlignment="Top" Width="77"                      />
+        <Button x:ConnectionId='8' x:Name="CancelButton" Content="Cancel" HorizontalAlignment="Left" Margin="287,587,0,0" VerticalAlignment="Top"                         />
     </Grid>
 </local:NavBar>
 

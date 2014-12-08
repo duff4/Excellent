@@ -78,3 +78,4 @@ C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPho
 C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\obj\x86\Debug\Pages\LogInPage.xbf
 C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\Newtonsoft.Json.dll
 C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\bin\x86\Debug\Newtonsoft.Json.xml
+C:\Users\Davydov\documents\visual studio 2013\Projects\App1\App2\App2.WindowsPhone\obj\x86\Debug\App2.WindowsPhone.csprojResolveAssemblyReference.cache

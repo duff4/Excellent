@@ -38,7 +38,7 @@ namespace App2.Pages
 
             var items = GenericRepo<EventEntity>.GetAll();
 
-            EventsGridView.ItemsSource = items.Select(x => string.Format("{0,-15}{1,-10}{2}{3, -10}{4, 100}", /*items.IndexOf(x).ToString(), */x.Name, x.StartDate.ToString("d"),"--",x.EndDate.ToString("d"), x.Id.ToString()));
+            EventsGridView.ItemsSource = items.Select(x => string.Format("{0,-15}{1,-10}{2}{3, -10}{4, 200}", /*items.IndexOf(x).ToString(), */x.Name, x.StartDate.ToString("d"),"--",x.EndDate.ToString("d"), x.Id.ToString()));
 
             DeleteEventButton.IsEnabled = false;
             EditEventButton.IsEnabled = false;

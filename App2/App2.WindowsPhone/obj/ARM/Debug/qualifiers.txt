@@ -1,2 +1,4 @@
 Scale=240
+Language=UK-UA
 Language=EN-US
+Language=RU-RU

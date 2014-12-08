@@ -89,7 +89,7 @@ namespace App2.Pages
                 Name = string.IsNullOrWhiteSpace(NameTextBox.Text) ? default(string) : NameTextBox.Text.Trim(),
                 Description = string.IsNullOrWhiteSpace(DescriptionTextBox.Text) ? default(string) : DescriptionTextBox.Text.Trim(),
                 EvaluationType = EvaluationTypeComboBox.SelectedItem == null ? EvaluationType.None : (EvaluationType)Enum.ToObject(typeof(EvaluationType), EvaluationTypeComboBox.Items.IndexOf(EvaluationTypeComboBox.SelectedItem)),
-                UserId = GenericRepo<ServerCredentials>.GetFirst().Id,
+                //UserId = GenericRepo<ServerCredentials>.GetFirst().Id,
                 Updated = DateTime.Now
             };
 

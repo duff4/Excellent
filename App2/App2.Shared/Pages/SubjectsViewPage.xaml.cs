@@ -40,7 +40,7 @@ namespace App2.Pages
 
             var items = GenericRepo<SubjectEntity>.GetAll();
 
-            SubjectsGridView.ItemsSource = items.Select(x => string.Format("{0,-15}{1,-15}{2,100}", /*items.IndexOf(x).ToString(), */x.Name, x.EvaluationType, x.Id.ToString()));
+            SubjectsGridView.ItemsSource = items.Select(x => string.Format("{0,-15}{1,-15}{2,200}", /*items.IndexOf(x).ToString(), */x.Name, x.EvaluationType, x.Id.ToString()));
 
             DeleteSubjectButton.IsEnabled = false;
             EditSubjectButton.IsEnabled = false;

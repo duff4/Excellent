@@ -20,8 +20,8 @@
                 </ItemsPanelTemplate>
             </GridView.ItemsPanel>
         </GridView>
-        <Button x:Name="AddSubjectButton" Content="Add Subject" HorizontalAlignment="Left" Margin="15,0,0,15" VerticalAlignment="Bottom" Tapped="AddSubjectButtonTap"/>
-        <Button x:Name="EditSubjectButton" Content="Edit Subject" HorizontalAlignment="Right" Margin="0,0,15,15" VerticalAlignment="Bottom" Tapped="EditSubjectButtonTap"/>
+        <Button x:Name="AddSubjectButton" Content="Add Subject" HorizontalAlignment="Center" Margin="0,0,0,105" VerticalAlignment="Bottom" Tapped="AddSubjectButtonTap"/>
+        <Button x:Name="EditSubjectButton" Content="Edit Subject" HorizontalAlignment="Center" Margin="0,0,0,60" VerticalAlignment="Bottom" Tapped="EditSubjectButtonTap"/>
         <Button x:Name="DeleteSubjectButton" Content="Delete Task" HorizontalAlignment="Center" Margin="0,0,0,15" VerticalAlignment="Bottom" Tapped="DeleteSubjectButtonTap"/>
     </Grid>
 </local:NavBar>

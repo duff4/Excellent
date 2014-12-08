@@ -48,6 +48,7 @@ namespace App2.Pages
 
         private async void LogInButtonTap(object sender, TappedRoutedEventArgs e)
         {
+            /*
             var response = await MyHttpFramework.SerializeObjectPostItToServerAndGetResponse(new ClientCredentials
             {
                 login = LogInTextBox.Text,
@@ -83,7 +84,7 @@ namespace App2.Pages
             var b = new ServerGeneralRequest {LastUpdate = cleanServerCredentials.LastUpdated, Entities = a};
 
             var c = await MyHttpFramework.Sync(b, cleanServerCredentials);
-
+            */
             Frame.Navigate(typeof (TasksViewPage));
         }
     }

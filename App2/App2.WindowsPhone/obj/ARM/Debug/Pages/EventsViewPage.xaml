@@ -1,8 +1,8 @@
 ﻿<local:NavBar
-    x:Class="App1.Pages.EventsViewPage"
+    x:Class="App2.Pages.EventsViewPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:App1.Pages"
+    xmlns:local="using:App2.Pages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
@@ -11,17 +11,18 @@
     <Grid Background="#FF7E9CEA">
         <Button x:ConnectionId='1' x:Name="TasksButton" Content="TASKS" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" BorderThickness="0" RenderTransformOrigin="0.5,0.5" Width="95" MinWidth="50" MinHeight="23" Height="60" Padding="0" Foreground="White"                                                 />
         <Button x:ConnectionId='2' x:Name="EventsButton" Content="EVENTS" HorizontalAlignment="Left" Margin="105,0,0,0" VerticalAlignment="Top" MinHeight="23" MinWidth="50" Height="60" BorderThickness="0" Width="95" Padding="0" Foreground="Red"                                                   />
-        <Button x:ConnectionId='3' x:Name="CalendarButton" Content="CALENDAR" HorizontalAlignment="Left" Margin="200,0,0,0" VerticalAlignment="Top" BorderThickness="0" MinHeight="23" MinWidth="50" Width="95" Height="60" Padding="0"                                                       />
+        <Button x:ConnectionId='3' x:Name="LecturersButton" Content="LECTURERS" HorizontalAlignment="Left" Margin="200,0,0,0" VerticalAlignment="Top" BorderThickness="0" MinHeight="23" MinWidth="50" Width="95" Height="60" Padding="0"                                                         />
         <Button x:ConnectionId='4' x:Name="SubjectsButton" Content="SUBJECTS" HorizontalAlignment="Left" Margin="295,0,0,0" VerticalAlignment="Top" MinHeight="23" MinWidth="50" Padding="0" Width="95" BorderThickness="0" Height="60"                                                       />
-        <GridView x:ConnectionId='5' ScrollViewer.VerticalScrollMode = "Auto" ScrollViewer.HorizontalScrollMode = "Auto"  ScrollViewer.VerticalScrollBarVisibility = "Disabled" ScrollViewer.HorizontalScrollBarVisibility = "Disabled" x:Name="EventsGridView" HorizontalAlignment="Left" Height="463" Margin="16,55,0,0" VerticalAlignment="Top" Width="370"                                                   BorderBrush="White">
+        <GridView x:ConnectionId='5' ScrollViewer.VerticalScrollMode = "Auto" ScrollViewer.HorizontalScrollMode = "Auto"  ScrollViewer.VerticalScrollBarVisibility = "Disabled" ScrollViewer.HorizontalScrollBarVisibility = "Disabled" x:Name="EventsGridView" HorizontalAlignment="Center" Margin="0,55,0,0" VerticalAlignment="Top"                                                   BorderBrush="White" MaxHeight="400">
             <GridView.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapGrid MaximumRowsOrColumns="1" Orientation="Horizontal" ItemWidth="370" />
                 </ItemsPanelTemplate>
             </GridView.ItemsPanel>
         </GridView>
-        <Button x:ConnectionId='6' x:Name="AddEventButton" Content="Add Event" HorizontalAlignment="Left" Margin="13,515,0,0" VerticalAlignment="Top"                           />
-        <Button x:ConnectionId='7' x:Name="EditEventButton" Content="Edit Event" HorizontalAlignment="Left" Margin="281,515,0,0" VerticalAlignment="Top"                            />
+        <Button x:ConnectionId='6' x:Name="AddEventButton" Content="Add Event" HorizontalAlignment="Center" Margin="0,0,0,105" VerticalAlignment="Bottom"                           />
+        <Button x:ConnectionId='7' x:Name="EditEventButton" Content="Edit Event" HorizontalAlignment="Center" Margin="0,0,0,60" VerticalAlignment="Bottom"                            />
+        <Button x:ConnectionId='8' x:Name="DeleteEventButton" Content="Delete Event" HorizontalAlignment="Center" Margin="0,0,0,15" VerticalAlignment="Bottom"                              />
 
     </Grid>
 </local:NavBar>

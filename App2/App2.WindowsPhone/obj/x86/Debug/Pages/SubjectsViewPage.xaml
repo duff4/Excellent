@@ -20,8 +20,8 @@
                 </ItemsPanelTemplate>
             </GridView.ItemsPanel>
         </GridView>
-        <Button x:ConnectionId='6' x:Name="AddSubjectButton" Content="Add Subject" HorizontalAlignment="Left" Margin="15,0,0,15" VerticalAlignment="Bottom"                             />
-        <Button x:ConnectionId='7' x:Name="EditSubjectButton" Content="Edit Subject" HorizontalAlignment="Right" Margin="0,0,15,15" VerticalAlignment="Bottom"                              />
+        <Button x:ConnectionId='6' x:Name="AddSubjectButton" Content="Add Subject" HorizontalAlignment="Center" Margin="0,0,0,105" VerticalAlignment="Bottom"                             />
+        <Button x:ConnectionId='7' x:Name="EditSubjectButton" Content="Edit Subject" HorizontalAlignment="Center" Margin="0,0,0,60" VerticalAlignment="Bottom"                              />
         <Button x:ConnectionId='8' x:Name="DeleteSubjectButton" Content="Delete Task" HorizontalAlignment="Center" Margin="0,0,0,15" VerticalAlignment="Bottom"                                />
     </Grid>
 </local:NavBar>
