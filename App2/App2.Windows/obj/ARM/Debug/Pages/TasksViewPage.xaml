@@ -14,7 +14,7 @@
         <Button x:ConnectionId='2' x:Name="EventsButton" Content="EVENTS" HorizontalAlignment="Left" Margin="105,0,0,0" VerticalAlignment="Top" MinHeight="23" MinWidth="50" Height="60" BorderThickness="0" Width="95" Padding="0"                                                   />
         <Button x:ConnectionId='3' x:Name="LecturersButton" Content="LECTURERS" HorizontalAlignment="Left" Margin="200,0,0,0" VerticalAlignment="Top" BorderThickness="0" MinHeight="23" MinWidth="50" Width="95" Height="60" Padding="0"                                                         />
         <Button x:ConnectionId='4' x:Name="SubjectsButton" Content="SUBJECTS" HorizontalAlignment="Left" Margin="295,0,0,0" VerticalAlignment="Top" MinHeight="23" MinWidth="50" Padding="0" Width="95" BorderThickness="0" Height="60"                                                       />
-        <Button x:ConnectionId='5' x:Name="AddTaskButton" Content="Add Task" HorizontalAlignment="Left" Margin="15,0,0,60" VerticalAlignment="Bottom"                          />
+        <Button x:ConnectionId='5' x:Name="AddTaskButton" Content="Add Task" HorizontalAlignment="Center" Margin="0,0,0,105" VerticalAlignment="Bottom"                          />
         <Button x:ConnectionId='6' x:Name="DeleteTaskButton" Content="Delete Task" HorizontalAlignment="Center" Margin="0,0,0,15" VerticalAlignment="Bottom"                             />
         <GridView x:ConnectionId='7' ScrollViewer.VerticalScrollMode = "Auto" ScrollViewer.HorizontalScrollMode = "Disabled"  ScrollViewer.VerticalScrollBarVisibility = "Disabled" ScrollViewer.HorizontalScrollBarVisibility = "Disabled" x:Name="TasksGridView" HorizontalAlignment="Center" Margin="0,55,0,0" VerticalAlignment="Top"                                                  BorderBrush="White" MaxHeight="400">
             <GridView.ItemsPanel>
@@ -23,7 +23,7 @@
                 </ItemsPanelTemplate>
             </GridView.ItemsPanel>
         </GridView>
-        <Button x:ConnectionId='8' x:Name="EditTaskButton" Content="Edit Task" HorizontalAlignment="Right" Margin="0,0,15,60" VerticalAlignment="Bottom"                           />
+        <Button x:ConnectionId='8' x:Name="EditTaskButton" Content="Edit Task" HorizontalAlignment="Center" Margin="0,0,0,60" VerticalAlignment="Bottom"                           />
     </Grid>
 </local:NavBar>
 

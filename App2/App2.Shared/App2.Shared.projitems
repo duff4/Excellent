@@ -134,4 +134,7 @@
     <PRIResource Include="$(MSBuildThisFileDirectory)Strings\uk-UA\uk-UA.resw" />
     <PRIResource Include="$(MSBuildThisFileDirectory)Strings\ru-RU\ru-RU.resw" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)App2.Shared.licenseheader" />
+  </ItemGroup>
 </Project>

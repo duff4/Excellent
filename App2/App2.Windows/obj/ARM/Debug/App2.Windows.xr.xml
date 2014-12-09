@@ -23,6 +23,7 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Padding" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="CompositeMode" />
       <RootEvent Name="Click" />
       <RootEvent Name="Tapped" />
     </RootType>
@@ -84,6 +85,7 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="CompositeMode" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="HorizontalAlignment" />

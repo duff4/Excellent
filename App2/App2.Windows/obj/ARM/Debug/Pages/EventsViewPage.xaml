@@ -20,8 +20,8 @@
                 </ItemsPanelTemplate>
             </GridView.ItemsPanel>
         </GridView>
-        <Button x:ConnectionId='6' x:Name="AddEventButton" Content="Add Event" HorizontalAlignment="Left" Margin="15,0,0,15" VerticalAlignment="Bottom"                           />
-        <Button x:ConnectionId='7' x:Name="EditEventButton" Content="Edit Event" HorizontalAlignment="Right" Margin="0,0,15,15" VerticalAlignment="Bottom"                            />
+        <Button x:ConnectionId='6' x:Name="AddEventButton" Content="Add Event" HorizontalAlignment="Center" Margin="0,0,0,105" VerticalAlignment="Bottom"                           />
+        <Button x:ConnectionId='7' x:Name="EditEventButton" Content="Edit Event" HorizontalAlignment="Center" Margin="0,0,0,60" VerticalAlignment="Bottom"                            />
         <Button x:ConnectionId='8' x:Name="DeleteEventButton" Content="Delete Event" HorizontalAlignment="Center" Margin="0,0,0,15" VerticalAlignment="Bottom"                              />
 
     </Grid>
